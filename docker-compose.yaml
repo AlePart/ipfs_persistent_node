@@ -20,8 +20,8 @@ services:
 volumes:
   node_1:
     external: true
-  node_1_data:
+  ipfs_persistent_node_node_1_data:
   node_2:
     external: true
-  node_2_data:
+  ipfs_persistent_node_node_2_data:
   
