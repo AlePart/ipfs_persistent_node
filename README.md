@@ -38,3 +38,4 @@ run container with compose
 docker compose up
 ```
 
+The compose maps a volume to ipfs_persistent_node_node_X_data where x is the node number and in that directory with an ispection you can finde the config file. you can change those files from the shell
