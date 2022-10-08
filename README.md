@@ -1,6 +1,8 @@
 # ipfs_persistent_node
+
 The given docker-compose.yaml use 2 different networks called net_1 and net_2 and 2 persistent external volumes node_1 and node_2 used for initialization and starting
 
+you must Clone this repo than
 you must create 2 volumes with the following command
 
 ```
