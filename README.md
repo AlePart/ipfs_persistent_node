@@ -19,6 +19,12 @@ cp ./.init /var/lib/docker/volumes/node_2/_data
 cp ./start.sh /var/lib/docker/volumes/node_1/_data
 cp ./start.sh /var/lib/docker/volumes/node_2/_data
 ```
+change user privileages to execution to start.sh
+```
+chmod u+x /var/lib/docker/volumes/node_2/_data/start.sh
+chmod u+x /var/lib/docker/volumes/node_1/_data/start.sh
+
+```
 
 Pull the image
 ```
