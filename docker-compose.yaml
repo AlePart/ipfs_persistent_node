@@ -5,7 +5,7 @@ services:
     network_mode: "net_1"
     volumes:
       - node_1:/root:rw
-      - node_1_data:/root/.ipfs:rw
+      - ipfs_persistent_node_node_1_data:/root/.ipfs:rw
     command: "/root/start.sh"
     
   ipfs_2:
@@ -13,7 +13,7 @@ services:
     network_mode: "net_2"
     volumes:
       - node_2:/root:rw
-      - node_2_data:/root/.ipfs:rw
+      - ipfs_persistent_node_node_2_data:/root/.ipfs:rw
     command: "/root/start.sh"
 
 
