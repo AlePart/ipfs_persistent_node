@@ -4,7 +4,7 @@ echo "NODE STARTING"
 if test -f "$FILE"; then
     echo "IPFS INIT"
     ipfs init
-    rm /root/.init
+    rm $FILE
     
     
 fi
