@@ -8,13 +8,17 @@ if test -f "$FILE"; then
     
     
 fi
+rm logstart.log
+touch logstart.log
 echo "IPFS START DAEMON"
 while :
 do
-pgrep ipfs
-if [ $? -eq 0 ]
+PG=$(pgrep ipfs)
+if [ -z "$PG" ]
 then
-  ipfs daemon
+  NOW=`date '+%F_%H:%M:%S'`
+  echo "$NOW" >> logstart.log
+  ipfs daemon &
 fi
 sleep 1
 done
