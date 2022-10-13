@@ -9,4 +9,13 @@ if test -f "$FILE"; then
     
 fi
 echo "IPFS START DAEMON"
-ipfs daemon
+while :
+do
+pgrep ipfs
+if [ $? -eq 0 ]
+then
+  ipfs daemon
+fi
+sleep 1
+done
+

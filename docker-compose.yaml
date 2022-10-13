@@ -8,20 +8,7 @@ services:
       - node_1_data:/root/.ipfs:rw
     command: "/root/start.sh"
     
-  ipfs_2:
-    image: "alepart/ipfs_persistent_node"
-    network_mode: "net_2"
-    volumes:
-      - node_2:/root:rw
-      - node_2_data:/root/.ipfs:rw
-    command: "/root/start.sh"
-
-
 volumes:
   node_1:
     external: true
   node_1_data:
-  node_2:
-    external: true
-  node_2_data:
-  
