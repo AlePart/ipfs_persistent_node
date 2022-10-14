@@ -8,7 +8,6 @@ if test -f "$FILE"; then
     
     
 fi
-rm logstart.log
 touch logstart.log
 echo "IPFS START DAEMON"
 ipfs daemon
