@@ -4,12 +4,15 @@ echo "NODE STARTING"
 if test -f "$FILE"; then
     echo "IPFS INIT"
     ipfs init
+    touch logstart.log
     rm $FILE
     
     
 fi
-touch logstart.log
-echo "IPFS START DAEMON"
-ipfs daemon
+rm logstart.log
 
+echo "IPFS START DAEMON"
+NOW=`date '+%F_%H:%M:%S'`
+echo "$NOW" >> logstart.log
+ipfs daemon &
 
