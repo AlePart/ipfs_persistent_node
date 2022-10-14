@@ -10,6 +10,8 @@ RUN tar -xvzf kubo_v0.16.0_linux-amd64.tar.gz
 WORKDIR  /root/kubo
 RUN bash install.sh
 WORKDIR /root/ 
+RUN rm -rf kubo 
+RUN rm *.gz
 RUN git clone https://github.com/AlePart/ipfs_persistent_node.git
 WORKDIR /root/ipfs_persistent_node
 RUN cp start.sh /root/
