@@ -17,6 +17,7 @@ RUN cp .init /root/
 WORKDIR /root/ 
 RUN rm -rf ipfs_persistent_node
 RUN chmod u+x start.sh
+CMD ./start.sh
 
 
 
