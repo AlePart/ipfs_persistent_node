@@ -13,5 +13,5 @@ fi
 echo "IPFS START DAEMON"
 NOW=`date '+%F_%H:%M:%S'`
 echo "$NOW" >> logstart.log
-ipfs daemon &
+ipfs daemon
 
