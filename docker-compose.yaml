@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   ipfs_1:
-    image: "alepart/ipfs_persistent_node"
+    image: "nodetest"
     network_mode: "net_1"
     volumes:
       - node_1:/root:rw
@@ -10,5 +10,4 @@ services:
     
 volumes:
   node_1:
-    external: true
   node_1_data:
