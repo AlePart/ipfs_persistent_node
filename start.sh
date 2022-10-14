@@ -9,7 +9,6 @@ if test -f "$FILE"; then
     
     
 fi
-rm logstart.log
 
 echo "IPFS START DAEMON"
 NOW=`date '+%F_%H:%M:%S'`
