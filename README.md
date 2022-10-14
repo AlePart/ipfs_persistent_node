@@ -6,7 +6,7 @@ you must Clone this repo than
 
 Pull the image
 ```
-docker pull alepart/ipfs_persistent_node:1.1
+docker pull alepart/ipfs_persistent_node:1.2
 ```
 run container with compose
 ```
